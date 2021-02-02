@@ -1,11 +1,3 @@
 header {
-    color: red;
-}
-
-div {
-    color: blue;
-}
-
-footer {
-    color: pink;
+    color: inherit;
 }
