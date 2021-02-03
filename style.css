@@ -33,6 +33,7 @@
     background-color: #333;
     border-radius: 21px;
     transform: rotate(30deg);
+    z-index: -2;
   }
   
   .product-device::before {
@@ -44,6 +45,7 @@
     content: "";
     background-color: rgba(255, 255, 255, .1);
     border-radius: 5px;
+    z-index: -1;
   }
   
   .product-device-2 {
