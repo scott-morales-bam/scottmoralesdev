@@ -11,47 +11,65 @@
 </head>
 
 <body>
-    <header class="site-header sticky-top py-1">
-        <nav class="container d-flex flex-column flex-md-row justify-content-between w-75">
-            <a class="py-2 d-md-inline-block" href="#Projects">Projects</a>
-            <a class="py-2 d-md-inline-block" href="https://www.instagram.com/scottmoralesdrum">Instagram</a>
-            <a class="py-2 d-md-inline-block" href="https://www.linkedin.com/in/rscottmorales/">LinkedIn</a>
-            <a class="py-2 d-md-inline-block" href="https://github.com/scottmo223">GitHub</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Scott Morales</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/scottmoralesdrum">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/rscottmorales/">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/scottmo223">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="z-index: 2;">
             <div class="col-md-5 p-lg-5 mx-auto my-5" style="z-index: 1;">
                 <h1 class="display-4 fw-normal">Scott Morales</h1>
-                <p class="lead fw-normal">A software engineer with a passion for innovative and empowering applications.</p>
+                <p class="lead fw-normal">A software engineer with a passion for innovative and empowering applications.
+                </p>
                 <a class="btn btn-outline-secondary" href="#">Coming soon</a>
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
 
-        <div class = "container-fluid bg-dark text-center text-white display-4 mt-5" id="Projects">
+        <div class="container-fluid bg-dark text-center text-white display-4 mt-5" id="Projects">
             Projects
         </div>
 
         <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
             <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5  overflow-hidden">
-                <a class = "text-center text-white" href = "https://jasonbellevue.netlify.app">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Belle Vue Venue</h2>
-                    <p class="lead">Website built for a wedding venue.</p>
-                </div>
+                <a class="text-center text-white" href="https://jasonbellevue.netlify.app">
+                    <div class="my-3 py-3">
+                        <h2 class="display-5">Belle Vue Venue</h2>
+                        <p class="lead">Website built for a wedding venue.</p>
+                    </div>
                 </a>
                 <div class="bg-light shadow-sm mx-auto"
                     style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
             </div>
             <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <a class = "text-dark" href = "https://odemmissions.com/">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">ODEM Missions</h2>
-                    <p class="lead">Website built for a non-profit organization.</p>
-                </div>
+                <a class="text-dark" href="https://odemmissions.com/">
+                    <div class="my-3 p-3">
+                        <h2 class="display-5">ODEM Missions</h2>
+                        <p class="lead">Website built for a non-profit organization.</p>
+                    </div>
                 </a>
                 <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
                 </div>
@@ -114,6 +132,7 @@
     </footer>
 
     <script src="app.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
