@@ -65,7 +65,14 @@
   }
   
   i {
-    color: rgba(255,255,255,.55);
+    position: absolute;
+    color: inherit;
+    transform: scale(0.6) translate(-5px, -9px);
+  }
+
+  h2 i {
+    position: absolute;
+    transform: scale(0.33) translate(-42px, -36px);
   }
   
   /*
