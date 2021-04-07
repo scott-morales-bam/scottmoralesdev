@@ -64,13 +64,13 @@
     object-position: top;
   }
   
-  i {
+  i.fas {
     position: absolute;
     color: inherit;
     transform: scale(0.6) translate(-5px, -9px);
   }
 
-  h2 i {
+  h2 i.fas {
     position: absolute;
     transform: scale(0.33) translate(-42px, -36px);
   }
