@@ -16,13 +16,13 @@ project-root/
 │   ├── nav.html
 │   └── footer.html
 ├── resources/
+│   ├── icons/
 │   └── images/
-│       └── project-screenshots/
 ├── games/
 │   └── minesweeper/
 │       ├── index.html
-│       ├── css/
-│       └── js/
+│       ├── script.js
+│       └── style.css
 └── blog/ (planned)
 
 - **index.html**: Main landing page.
