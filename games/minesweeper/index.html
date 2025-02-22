@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <table id="game-board"></table>
+
+            <div style="display: flex">
+                <p>Number of flags:</p>
+                <p id="numberOfFlags">0</p>
+            </div>
+
+            <div style="display: flex">
+                <p>Number of mines:</p>
+                <p id="numberOfMines">0</p>
+            </div>
+
+            <div id="endModal" class="modal">
+                <div class="modal-content">
+                    <h2 id="modalText"></h2>
+                    <button id="newGameBtn">New Game</button>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
