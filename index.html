@@ -1,160 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Scott Morales</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="shortcut icon"
-            type="image/x-icon"
-            href="./resources/icons/favicon.png"
-        />
-        <script
-            src="https://kit.fontawesome.com/6a01a5668d.js"
-            crossorigin="anonymous"
-        ></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scott Morales</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./resources/icons/favicon.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/6a01a5668d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    <body>
-        <nav>
-            <div data-include="partials/nav.html"></div>
-        </nav>
+  <body>
+    <nav>
+      <div data-include="partials/nav.html"></div>
+    </nav>
 
-        <main>
-            <div
-                class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
-                style="z-index: 2"
-            >
-                <div class="col-md-5 p-lg-5 mx-auto my-5" style="z-index: 1">
-                    <h1 class="display-4 fw-normal">Scott Morales</h1>
-                    <p class="lead fw-normal">
-                        A software engineer with a passion for innovative and
-                        empowering applications.
-                    </p>
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <a
-                            class="btn btn-outline-secondary"
-                            href="https://www.instagram.com/scottmoralesdrum"
-                        >
-                            Drum Stuff
-                            <i
-                                class="fab fa-instagram me-1 fs-5 fw-bold"
-                                style="transform: translateY(1.6px)"
-                            ></i>
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <a
-                            class="btn btn-outline-secondary"
-                            href="games/minesweeper/playMinesweeper.html"
-                        >
-                            Play some minesweeper
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <main>
+      <div id="main-content">
+        <div data-include="partials/home.html"></div>
+        <div data-include="partials/projects.html"></div>
+      </div>
+    </main>
 
-            <div
-                class="container-fluid bg-dark text-center text-white display-4 mt-5 py-3"
-                id="Projects"
-            >
-                Projects
-            </div>
+    <footer>
+      <div data-include="partials/footer.html"></div>
+    </footer>
 
-            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-                <!-- Website: Belle Vue -->
-                <div
-                    class="bg-dark me-md-3 py-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-                >
-                    <a
-                        class="text-center text-white"
-                        href="https://jasonbellevue.netlify.app"
-                    >
-                        <div class="my-3 py-3">
-                            <h2 class="display-5">
-                                Belle Vue Venue
-                                <i class="fas fa-external-link-alt"></i>
-                            </h2>
-                            <p class="lead">
-                                Website built for a wedding venue
-                            </p>
-                        </div>
-                        <img
-                            src="resources/images/bellevuehomescreen.png"
-                            alt="Belle Vue website screenshot"
-                            class="website"
-                        />
-                    </a>
-                </div>
-                <!-- Website: Odem Missions -->
-                <div
-                    class="bg-light me-md-3 py-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-                >
-                    <a class="text-dark" href="https://odemmissions.com/">
-                        <div class="my-3 p-3">
-                            <h2 class="display-5">
-                                ODEM Missions
-                                <i class="fas fa-external-link-alt"></i>
-                            </h2>
-                            <p class="lead">
-                                Website built for a non-profit organization
-                            </p>
-                        </div>
-                        <img
-                            src="resources/images/odemhomescreen.png"
-                            alt="ODEM website screenshot"
-                            class="website"
-                        />
-                    </a>
-                </div>
-                <!-- Website: Scott-Landing-Site -->
-                <div
-                    class="bg-light me-md-3 py-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-                >
-                    <a
-                        class="text-dark"
-                        href="https://scott-landing-site.netlify.app/"
-                    >
-                        <div class="my-3 p-3">
-                            <h2 class="display-5">
-                                OG
-                                <span class="text-nowrap"
-                                    >scottmorales
-                                    <i class="fas fa-external-link-alt"></i
-                                ></span>
-                            </h2>
-                            <p class="lead">
-                                My first personal website scottmorales.dev
-                            </p>
-                        </div>
-                        <img
-                            src="resources/images/scottmoralesdev.png"
-                            alt="scottmorales.dev website screenshot"
-                            class="website"
-                        />
-                    </a>
-                </div>
-            </div>
-        </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
 
-        <footer>
-            <div data-include="partials/footer.html"></div>
-        </footer>
-
-        <script src="js/app.js"></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-            crossorigin="anonymous"
-        ></script>
-
-        <script src="js/include.js"></script>
-    </body>
+    <script src="js/app.js"></script>
+    <script src="js/include.js"></script>
+  </body>
 </html>
