@@ -1,90 +1,48 @@
+body {
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; 
+}
+
+nav {
+  height: 56px;
+}
+
+main {
+  flex-grow: 1; 
+  min-height: calc(100vh - 56px - 156px);
+}
+
+footer {
+  height: 156px;
+}
+
 .container {
-    max-width: 960px;
-  }
-  
-  /*
-   * Custom translucent site header
-   */
-  
-  .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /*
-   * Dummy devices (replace them with your own or something else entirely!)
-   */
-  
-  .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    transform: rotate(30deg);
-    z-index: -2;
-  }
-  
-  .product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
-    z-index: -1;
-  }
-  
-  .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
-  }
+  max-width: 960px;
+}
 
-  .website {
-    border-radius: 1rem;
-    height: 300px;
-    width: 80%;
-    object-fit: cover;
-    object-position: top;
-  }
-  
-  i.fas {
-    position: absolute;
-    color: inherit;
-    transform: scale(0.6) translate(-5px, -9px);
-  }
+.website {
+  border-radius: 1rem;
+  height: 300px;
+  width: 80%;
+  object-fit: cover;
+  object-position: top;
+}
 
-  h2 i.fas {
-    position: absolute;
-    transform: scale(0.33) translate(-42px, -36px);
-  }
-  
-  /*
-   * Extra utilities
-   */
-  
-  .flex-equal > * {
+i.fas {
+  position: absolute;
+  color: inherit;
+  transform: scale(0.6) translate(-5px, -9px);
+}
+
+h2 i.fas {
+  position: absolute;
+  transform: scale(0.33) translate(-42px, -36px);
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
     flex: 1;
   }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      flex: 1;
-    }
-  }
-  
+}
